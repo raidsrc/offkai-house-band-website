@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  /* line-height: 1.5; */
+  font-size: 1.25rem;
+  color: #ddd;
+  background-color: #202020;
+  /* font-family: 'inter', 'ibm plex sans', 'sans-serif'; */
+  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+  margin: 0;
+}
+
+h1, h2, h3 {
+  /* line-height: 1.2; */
+  font-family: 'manrope', 'sans-serif';
+  font-weight: 800;
+  margin: 0;
+}
+
+#hero {
+  background-color: blue;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.big-video {
+  height: 44rem;
+}
+
+#sick-text-1 {
+  font-size: 20vw;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+#sick-text-2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 12vw;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+#sick-text-3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 8vw;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+#dictionary {
+  padding: 6rem 4rem;
+
+  #words {
+    display: flex;
+    align-items: baseline;
+
+    h1 {
+      padding-right: 2rem;
+    }
+
+    h2 {
+      padding-right: 3rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #pronunciation {}
+}
+
+.lower-opacity-text {
+  opacity: 10%;
+}
+
+#concert-cta {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  #cta {
+    width: 24rem;
+    padding-right: 16rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .cta-text {
+    padding-bottom: 1rem;
+  }
+}
+
+.cta-text {}
+
+.cta-button {
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #005682;
+  font-size: 1.2rem;
+  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+  color: #ddd;
+}
+
+#members {
+  padding: 6rem 4rem;
+
+  img {
+    width: 12rem;
+    border-radius: 1000rem;
+  }
+}
+
+#final-cta {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  #cta {
+    width: 24rem;
+    padding-left: 16rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .cta-text {
+    padding-bottom: 1rem;
+  }
+}
+
+.big-image {
+  height: 44rem;
+}
+
+footer {
+  text-align: center;
+
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+
+.sans {
+  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+}
+
+.serif {
+  font-family: 'CMU Serif', 'serif';
+}
+
+/* if smaller than X width */
+@media (max-width: 1600px) {
+  .big-video {
+    height: 44rem;
+  }
+
+
+}
+
+@media (max-width: 1280px) {
+  .big-video {
+    height: 36rem;
+  }
+
+  #sick-text-3 {
+    padding: 0 1rem;
+    font-size: 7.9vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #sick-text-3 {
+    padding: 0 1rem;
+    font-size: 7.7vw;
+  }
+  #dictionary {
+    padding: 3rem 2rem;
+
+    #words {
+      display: block;
+
+      h1 {
+        padding-right: 2rem;
+      }
+
+      h2 {
+        padding-right: 3rem;
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    #pronunciation {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  #concert-cta {
+    #cta {
+      padding-right: 8rem;
+    }
+
+    .cta-text {}
+  }
+
+  #final-cta {
+    #cta {
+      padding-left: 8rem;
+    }
+
+    .cta-text {}
+  }
+}
+
+@media (max-width: 512px) {
+  #sick-text-3 {
+    padding: 0 1rem;
+    font-size: 7.2vw;
+  }
+
+  #concert-cta {
+    #cta {
+      padding-right: 2rem;
+    }
+
+    .cta-text {}
+  }
+
+  #final-cta {
+    #cta {
+      padding-left: 2rem;
+    }
+
+    .cta-text {}
+  }
+}
