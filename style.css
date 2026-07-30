@@ -522,6 +522,13 @@ footer {
     text-align: right;
     top: 0;
     right: 0;
+    transition: opacity 400ms;
+    opacity: 100%;
+    color: white;
+  }
+
+  .sick-text-1-mobile:hover {
+    opacity: 0;
   }
 
   #sick-text-1-mobile-copy {
