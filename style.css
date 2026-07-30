@@ -14,6 +14,11 @@ body {
   margin: 0;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 2560px;
+}
+
 h1, h2, h3 {
   /* line-height: 1.2; */
   font-family: 'manrope', 'sans-serif';
@@ -22,7 +27,7 @@ h1, h2, h3 {
 }
 
 .big-video {
-  height: 44rem;
+  height: 48rem;
 }
 
 #hero {
@@ -33,12 +38,12 @@ h1, h2, h3 {
 }
 
 #hero.big-video {
-  height: 88vh;
+  height: 72rem;
 }
 
 
 #sick-text-1 {
-  font-size: 20vw;
+  font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
 }
@@ -46,8 +51,9 @@ h1, h2, h3 {
 #sick-text-2 {
   /* dis japanese */
   position: absolute;
+  top: 32rem;
   right: 0;
-  font-size: 12vw;
+  font-size: 20rem;
   text-align: justify;
   padding: 0 1rem;
 }
@@ -55,7 +61,7 @@ h1, h2, h3 {
 #sick-text-3 {
   position: absolute;
   bottom: 0;
-  font-size: 8vw;
+  font-size: 13rem;
   text-align: justify;
   padding: 0 1rem;
 }
@@ -81,6 +87,10 @@ h1, h2, h3 {
     }
   }
 
+  .drop-shadow {
+    filter: drop-shadow(2px 2px #af087b)
+  }
+
   #pronunciation {}
 }
 
@@ -95,13 +105,18 @@ h1, h2, h3 {
   align-items: end;
 
   #cta {
-    width: 24rem;
+    width: 32rem;
+    max-width: 100%;
     padding-right: 16rem;
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: end;
+
+    p {
+      text-align: right;
+    }
   }
 
   .cta-text {
@@ -173,9 +188,72 @@ footer {
 }
 
 /* if smaller than X width */
-@media (max-width: 1600px) {
+@media (max-width: 2560px) {
+  #hero.big-video {
+    height: 68rem;
+  }
+
+  #sick-text-1 {
+    font-size: 20vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  #sick-text-2 {
+    /* dis japanese */
+    position: absolute;
+    top: 30rem;
+    right: 0;
+    font-size: 12vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  #sick-text-3 {
+    position: absolute;
+    bottom: 0;
+    font-size: 8vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
   .big-video {
     height: 44rem;
+  }
+
+}
+
+
+
+@media (max-width: 1920px) {
+  #hero.big-video {
+    height: 48rem;
+  }
+
+  .big-video {
+    height: 44rem;
+  }
+
+  #sick-text-2 {
+    /* dis japanese */
+    top: 20rem;
+  }
+
+
+}
+
+@media (max-width: 1600px) {
+  #hero.big-video {
+    height: 48rem;
+  }
+
+  .big-video {
+    height: 44rem;
+  }
+
+  #sick-text-2 {
+    /* dis japanese */
+    top: 20rem;
   }
 
 
@@ -183,10 +261,12 @@ footer {
 
 @media (max-width: 1280px) {
   #hero.big-video {
-    height: 68vh;
-  }
-  .big-video {
     height: 36rem;
+  }
+
+  #sick-text-2 {
+    position: absolute;
+    top: 16rem;
   }
 
   #sick-text-3 {
@@ -197,22 +277,34 @@ footer {
 
 @media (max-width: 1080px) {
   #hero.big-video {
-    height: 60vh;
+    height: 32rem;
   }
+
   #sick-text-2 {
     position: absolute;
     top: 15rem;
+  }
+
+  #concert-cta {
+    #cta {
+      padding-right: 8rem;
+      width: 60%;
+    }
+
+    .cta-text {}
   }
 }
 
 @media (max-width: 800px) {
   #hero.big-video {
-    height: 45vh;
+    height: 22rem;
   }
+
   #sick-text-2 {
     position: absolute;
-    top: 12rem;
+    top: 10rem;
   }
+
   #sick-text-3 {
     padding: 0 1rem;
     font-size: 7.7vw;
@@ -245,7 +337,8 @@ footer {
 
   #concert-cta {
     #cta {
-      padding-right: 8rem;
+      padding-right: 5rem;
+      width: 60%;
     }
 
     .cta-text {}
@@ -262,12 +355,14 @@ footer {
 
 @media (max-width: 512px) {
   #hero.big-video {
-    height: 30vh;
+    height: 16rem;
   }
+
   #sick-text-2 {
     position: absolute;
     top: 8rem;
   }
+
   #sick-text-3 {
     padding: 0 1rem;
     font-size: 7.2vw;
@@ -275,7 +370,8 @@ footer {
 
   #concert-cta {
     #cta {
-      padding-right: 2rem;
+      padding: 0 2rem;
+      width: 80%;
     }
 
     .cta-text {}
