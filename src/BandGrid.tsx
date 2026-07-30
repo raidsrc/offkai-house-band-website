@@ -86,7 +86,7 @@ function BandMemberComponent({ member }: {
   return (
     <div className="member-component" id={`${name.toLocaleLowerCase()}-member-component`} >
       <div className="image-and-overlaid-text" onMouseOver={handleMouseover} onMouseOut={handleMouseout} >
-        <img src={img} id={`${name.toLocaleLowerCase()}-img`}/>
+        <img src={img} id={`${name.toLocaleLowerCase()}-img`} className="no-glow"/>
         <div className={`text ${hoverStyleClass}`}>
           <div>{name}</div>
           <div>{instrument}</div>

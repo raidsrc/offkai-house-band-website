@@ -190,12 +190,16 @@ a {
   }
 }
 
+.no-glow {
+  filter: drop-shadow(0 0 rgba(0, 0, 0, 0));
+  transition: all 500ms;
+}
+
 #nimo-harrison-text-mentioned {
   filter: drop-shadow(0px 0px 2px rgba(250, 0, 0, 0.7));
 }
 
 .nimo-harrison-glow {
-  transition: all 500ms;
   filter: drop-shadow(0px 0px 10px rgba(250, 0, 0, 1)) drop-shadow(0px 0px 10px rgba(250, 0, 0, 1));
 }
 
