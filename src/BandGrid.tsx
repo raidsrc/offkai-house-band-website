@@ -3,7 +3,7 @@ import ray from "./assets/ray.png"
 import zal from "./assets/zal.png"
 import soneji from "./assets/soneji.png"
 import obamium from "./assets/obamium.jpeg"
-import yiv from "./assets/yiv.png"
+// import yiv from "./assets/yiv.png"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.png"
 
@@ -32,7 +32,7 @@ function BandGrid() {
       },
     },
     {
-      name: "Yiv", instrument: "Guitar", img: yiv, socials: {
+      name: "Yiv", instrument: "Guitar", img: obamium, socials: {
         x: 'https://x.com/yiversonh',
       },
     },
@@ -43,6 +43,7 @@ function BandGrid() {
     },
     {
       name: "Soneji", instrument: "Tenor saxophone", img: soneji, socials: {
+        web: 'https://soneji.moe',
         x: 'https://x.com/justsoneji',
       },
     },
@@ -97,6 +98,8 @@ function BandMemberComponent({ member }: {
             const type = soc[0]
             const link = soc[1]
             switch (type) {
+              case 'web':
+                return <WebComponent link={link} />
               case 'yt':
                 return <YtComponent link={link} />
               case 'x':
@@ -110,6 +113,21 @@ function BandMemberComponent({ member }: {
         }
       </div>
     </div>
+  )
+}
+
+
+
+function WebComponent({ link }: {
+  link: string
+}) {
+  return (
+    <a href={link} target="_blank" aria-label="Website" className="web-component">
+      <svg width="100px" height="100px" viewBox="2.5 2.5 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 16.5H19.5M5.5 8.5H19.5M4.5 12.5H20.5M12.5 20.5C12.5 20.5 8 18.5 8 12.5C8 6.5 12.5 4.5 12.5 4.5M12.5 4.5C12.5 4.5 17 6.5 17 12.5C17 18.5 12.5 20.5 12.5 20.5M12.5 4.5V20.5M20.5 12.5C20.5 16.9183 16.9183 20.5 12.5 20.5C8.08172 20.5 4.5 16.9183 4.5 12.5C4.5 8.08172 8.08172 4.5 12.5 4.5C16.9183 4.5 20.5 8.08172 20.5 12.5Z" stroke-width="1.2" stroke="#555" />
+      </svg>
+    </a>
+
   )
 }
 
