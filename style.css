@@ -10,7 +10,7 @@ body {
   color: #ddd;
   background-color: #202020;
   /* font-family: 'inter', 'ibm plex sans', 'sans-serif'; */
-  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+  font-family: 'Helvetica', 'sans-serif';
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ main {
 
 h1, h2, h3 {
   /* line-height: 1.2; */
-  font-family: 'manrope', 'sans-serif';
+  font-family: 'AkzidenzGrotesk', sans-serif;
   font-weight: 800;
   margin: 0;
 }
@@ -61,7 +61,7 @@ h1, h2, h3 {
 #sick-text-3 {
   position: absolute;
   bottom: 0;
-  font-size: 13rem;
+  font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
 }
@@ -75,6 +75,7 @@ h1, h2, h3 {
 
     h1 {
       padding-right: 2rem;
+      font-size: 2.7rem;
     }
 
     h2 {
@@ -109,7 +110,7 @@ h1, h2, h3 {
   align-items: end;
 
   #cta {
-    width: 32rem;
+    width: 40rem;
     max-width: 100%;
     padding-right: 16rem;
     display: flex;
@@ -162,6 +163,7 @@ h1, h2, h3 {
         bottom: 5%;
         left: 5%;
         transition: opacity 300ms;
+        filter: drop-shadow(1px 1px 2px #000) drop-shadow(0px 0px 3px #000) ;
       }
 
       .text.hidden {
@@ -387,6 +389,12 @@ footer {
     font-size: 7.9vw;
   }
 
+  #concert-cta {
+    #cta {
+      width: 50%;
+    }
+  }
+
   #members {
     #band-grid {
       grid-template-columns: repeat(4, 1fr);
@@ -444,7 +452,7 @@ footer {
   }
 
   #dictionary {
-    padding: 3rem 2rem;
+    padding: 4rem 3rem;
 
     #words {
       display: block;
