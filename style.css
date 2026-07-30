@@ -31,21 +31,39 @@ h1, h2, h3 {
 }
 
 #hero {
-  background-color: blue;
+  background-color: white;
   position: relative;
   font-size: 4rem;
   font-weight: 800;
+  background: url("./src/assets/test-hero.jpg");
 }
 
 #hero.big-video {
   height: 72rem;
 }
 
+.sick-text {
+  mix-blend-mode: difference;
+  /* opacity: 0; */
+}
 
-#sick-text-1 {
+.sick-text-1 {
   font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
+  transition: opacity 300ms;
+  opacity: 100%;
+}
+
+.sick-text-1:hover {
+  opacity: 0%;
+}
+
+#sick-text-1-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #sick-text-2 {
@@ -58,12 +76,38 @@ h1, h2, h3 {
   padding: 0 1rem;
 }
 
+#sick-text-2:before {
+  position: absolute;
+  content: "打ち上げ";
+  opacity: 0;
+  mix-blend-mode: multiply;
+  transition: opacity 800ms, color 800ms;
+}
+
+#sick-text-2:before:hover {
+  opacity: 1;
+  color: white;
+}
+
 #sick-text-3 {
   position: absolute;
   bottom: 0;
   font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
+}
+
+#sick-text-3:before {
+  position: absolute;
+  content: '“The OffKai House Band”';
+  opacity: 0;
+  mix-blend-mode: multiply;
+  transition: opacity 800ms, color 800ms;
+}
+
+#sick-text-3:before:hover {
+  opacity: 1;
+  color: white;
 }
 
 #dictionary {
@@ -97,6 +141,11 @@ h1, h2, h3 {
       padding-right: 2rem;
     }
   }
+}
+
+.tiny-text {
+  padding-top: 3rem;
+  font-size: 0.7rem;
 }
 
 .lower-opacity-text {
@@ -163,7 +212,7 @@ h1, h2, h3 {
         bottom: 5%;
         left: 5%;
         transition: opacity 300ms;
-        filter: drop-shadow(1px 1px 2px #000) drop-shadow(0px 0px 3px #000) ;
+        filter: drop-shadow(1px 1px 2px #000) drop-shadow(0px 0px 3px #000);
       }
 
       .text.hidden {
@@ -294,7 +343,7 @@ footer {
     height: 68rem;
   }
 
-  #sick-text-1 {
+  .sick-text-1 {
     font-size: 20vw;
     text-align: justify;
     padding: 0 1rem;
