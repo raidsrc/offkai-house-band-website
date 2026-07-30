@@ -55,13 +55,24 @@
     </section>
     <section id="concert-cta" class="big-video">
       <div id="cta">
-        <p>Some shit goes here. And the background is concert video. Blah blah, the band is very cool. We did the OffKai
-          Relay Carousel Concert. Now book us
-          for more shows and pay us too. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ducimus
-          suscipit
-          illum possimus cumque, minima quae similique aliquam molestias nobis repudiandae? </p>
+        <p>
+          Known for massively-successful debut live performances at <a
+            href="https://offkaiexpo.com/event/oke2026-raki-kazuki-and-lazuli-surge-3d-live-musical/">SURGE! 3D Live
+            Musical</a> and <a href="https://offkaiexpo.com/event/oke2026-offkai-relay/">
+            OffKai Relay: Carousel
+            Concert</a>, fan-favorite supergroup Uchiage sees absolutely no limits to its potential. Established in
+          2026, the
+          group formed after <span id="nimo-harrison-text-mentioned">two OffKai Expo staff members</span> (who are now
+          members of the band) had a few drinks and then
+          decided to pitch the idea of 'live band plus Vtuber vocalist' to the OffKai upper brass. Uchiage
+          synthesizes the talents and breadth of musical expertise of the instrumentalists from multiple
+          pre-established
+          North American music groups. <a href="">Petty Tactic</a>. <a href="">Project Mikan</a>. <a href="">Aimai
+            Mirai</a>. And more. Fans from all over the world can't wait to see which direction Uchiage will launch off
+          to next.
+        </p>
         <div class="cta-text">
-          Get us on your project.
+          Get Uchiage on your next cover, original, live show, or other project.
         </div>
         <button class="cta-button">
           Contact
@@ -70,8 +81,6 @@
 
     </section>
     <section id="members">
-      <!-- <p>Known for massively-successful live performances such as SURGE! 3D Live Musical and OffKai Relay: Carousel Concert, acclaimed supergroup Uchiage (also known as the OffKai House Band) has just begun and sees no limits to its potential. Established in 2026, the group formed alsdkjfaskldjf from the union of Petty Tactic, Project Mikan, and Aimai Mirai </p> -->
-
       <h1>The band</h1>
       <!-- just this part is react. react start. -->
       <div id="band-grid"></div>
@@ -82,10 +91,10 @@
     <section id="final-cta" class="big-image">
       <div id="cta">
         <div class="cta-text">
-          Get in touch with us.
+          Don't be a stranger.
         </div>
         <button class="cta-button">
-          Contact
+          Hit us up
         </button>
       </div>
     </section>
@@ -99,5 +108,25 @@
 </body>
 
 <script type="module" src="/src/main.tsx"></script>
+<script defer>
+  const nimoHarrisonGlowText = document.getElementById("nimo-harrison-text-mentioned")
+  nimoHarrisonGlowText.addEventListener("mouseover", () => {
+    // find element that's nimo, find element that's harrison
+    // apply glow style to their image
+    const nimoImg = document.getElementById("ninomae nimo-img")
+    const harrisonImg = document.getElementById("harrison fjord-img")
+    nimoImg.className += " nimo-harrison-glow"
+    harrisonImg.className += " nimo-harrison-glow"
+  })
+  nimoHarrisonGlowText.addEventListener("mouseout", () => {
+    // find element that's nimo and harrison
+    // remove glow style from image 
+    const nimoImg = document.getElementById("ninomae nimo-img")
+    const harrisonImg = document.getElementById("harrison fjord-img")
+    nimoImg.className = nimoImg.className.replace(" nimo-harrison-glow", "")
+    harrisonImg.className = harrisonImg.className.replace(" nimo-harrison-glow")
+  })
+
+</script>
 
 </html>
