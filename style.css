@@ -91,11 +91,15 @@ h1, h2, h3 {
     filter: drop-shadow(2px 2px #af087b)
   }
 
-  #pronunciation {}
+  #pronunciation {
+    span {
+      padding-right: 2rem;
+    }
+  }
 }
 
 .lower-opacity-text {
-  opacity: 10%;
+  opacity: 5%;
 }
 
 #concert-cta {
@@ -139,9 +143,70 @@ h1, h2, h3 {
 #members {
   padding: 6rem 4rem;
 
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+  }
+
+  #band-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3rem;
+
+    .image-and-overlaid-text {
+      position: relative;
+
+      .text {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        transition: opacity 300ms;
+      }
+
+      .text.hidden {
+        opacity: 0%;
+      }
+
+      .text.visible {
+        opacity: 100%;
+
+      }
+    }
+  }
+
   img {
-    width: 12rem;
-    border-radius: 1000rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #555;
+    background: #f5f5f5;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .social-links a:hover {
+    filter: invert(1);
+  }
+
+  .social-links svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -172,7 +237,39 @@ h1, h2, h3 {
 
 footer {
   text-align: center;
+  padding: 2rem 0;
 
+}
+
+#raidsrc-link {
+  color: lab(55.4814% 75.0732 48.8528);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right,
+      lab(55.4814% 75.0732 48.8528),
+      lab(52.0183% 66.11 -78.2316) 100%);
+  text-decoration: none;
+  transition: opacity 400ms;
+  font-family: 'Neue Haas Grotesk', sans-serif;
+}
+
+#raidsrc-link:hover {
+  opacity: 80%;
+}
+
+/* Text Gradient CSS */
+.text-gradient {
+  color: #d68e8b;
+  background-image: linear-gradient(45deg,
+      #d68e8b,
+      #9c6967 25%,
+      #664644 50%,
+      #342525 75%,
+      #000000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .mono {
@@ -187,7 +284,9 @@ footer {
   font-family: 'CMU Serif', 'serif';
 }
 
-/* if smaller than X width */
+/* START MEDIA QUERIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* if smaller than/equal to X width -------------------------------------------------------------------------------- */
 @media (max-width: 2560px) {
   #hero.big-video {
     height: 68rem;
@@ -221,10 +320,16 @@ footer {
     height: 44rem;
   }
 
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+    }
+  }
 }
 
 
-
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1920px) {
   #hero.big-video {
     height: 48rem;
@@ -242,6 +347,7 @@ footer {
 
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1600px) {
   #hero.big-video {
     height: 48rem;
@@ -256,9 +362,16 @@ footer {
     top: 20rem;
   }
 
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+    }
+  }
 
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
   #hero.big-video {
     height: 36rem;
@@ -273,8 +386,15 @@ footer {
     padding: 0 1rem;
     font-size: 7.9vw;
   }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1080px) {
   #hero.big-video {
     height: 32rem;
@@ -283,6 +403,17 @@ footer {
   #sick-text-2 {
     position: absolute;
     top: 15rem;
+    font-size: 12vw;
+  }
+
+  #sick-text-3 {
+    font-size: 7.5vw;
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   #concert-cta {
@@ -295,6 +426,7 @@ footer {
   }
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
   #hero.big-video {
     height: 22rem;
@@ -302,7 +434,8 @@ footer {
 
   #sick-text-2 {
     position: absolute;
-    top: 10rem;
+    top: 9.4rem;
+    font-size: 14vw;
   }
 
   #sick-text-3 {
@@ -344,6 +477,14 @@ footer {
     .cta-text {}
   }
 
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+  }
+
   #final-cta {
     #cta {
       padding-left: 8rem;
@@ -353,19 +494,20 @@ footer {
   }
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 512px) {
   #hero.big-video {
-    height: 16rem;
+    height: 24rem;
   }
 
   #sick-text-2 {
     position: absolute;
-    top: 8rem;
+    top: 7rem;
   }
 
   #sick-text-3 {
     padding: 0 1rem;
-    font-size: 7.2vw;
+    font-size: 14vw;
   }
 
   #concert-cta {
@@ -377,11 +519,26 @@ footer {
     .cta-text {}
   }
 
+  #members {
+    padding: 4rem 2rem;
+
+    #band-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
   #final-cta {
     #cta {
       padding-left: 2rem;
     }
 
     .cta-text {}
+  }
+}
+
+@media (max-width: 420px) {
+  #sick-text-2 {
+    font-size: 20vw;
   }
 }
