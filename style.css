@@ -51,12 +51,13 @@ h1, h2, h3 {
   font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 300ms;
+  transition: opacity 800ms;
   opacity: 100%;
+  color: white;
 }
 
 .sick-text-1:hover {
-  opacity: 0%;
+  opacity: 0;
 }
 
 #sick-text-1-copy {
@@ -66,7 +67,7 @@ h1, h2, h3 {
   left: 0;
 }
 
-#sick-text-2 {
+.sick-text-2 {
   /* dis japanese */
   position: absolute;
   top: 32rem;
@@ -74,40 +75,42 @@ h1, h2, h3 {
   font-size: 20rem;
   text-align: justify;
   padding: 0 1rem;
-}
-
-#sick-text-2:before {
-  position: absolute;
-  content: "打ち上げ";
-  opacity: 0;
-  mix-blend-mode: multiply;
-  transition: opacity 800ms, color 800ms;
-}
-
-#sick-text-2:before:hover {
-  opacity: 1;
+  transition: opacity 1000ms;
+  opacity: 100%;
   color: white;
 }
 
-#sick-text-3 {
+.sick-text-2:hover {
+  opacity: 0;
+}
+
+.sick-text-2-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sick-text-3 {
   position: absolute;
   bottom: 0;
   font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
-}
-
-#sick-text-3:before {
-  position: absolute;
-  content: '“The OffKai House Band”';
-  opacity: 0;
-  mix-blend-mode: multiply;
-  transition: opacity 800ms, color 800ms;
-}
-
-#sick-text-3:before:hover {
-  opacity: 1;
+  transition: opacity 1300ms;
+  opacity: 100%;
   color: white;
+}
+
+.sick-text-3:hover {
+  opacity: 0;
+}
+
+.sick-text-3-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #dictionary {
@@ -349,7 +352,7 @@ footer {
     padding: 0 1rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     /* dis japanese */
     position: absolute;
     top: 30rem;
@@ -359,7 +362,7 @@ footer {
     padding: 0 1rem;
   }
 
-  #sick-text-3 {
+  .sick-text-3 {
     position: absolute;
     bottom: 0;
     font-size: 8vw;
@@ -390,7 +393,7 @@ footer {
     height: 44rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     /* dis japanese */
     top: 20rem;
   }
@@ -408,7 +411,7 @@ footer {
     height: 44rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     /* dis japanese */
     top: 20rem;
   }
@@ -428,12 +431,12 @@ footer {
     height: 36rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     position: absolute;
     top: 16rem;
   }
 
-  #sick-text-3 {
+  .sick-text-3 {
     padding: 0 1rem;
     font-size: 7.9vw;
   }
@@ -457,13 +460,13 @@ footer {
     height: 32rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     position: absolute;
     top: 15rem;
     font-size: 12vw;
   }
 
-  #sick-text-3 {
+  .sick-text-3 {
     font-size: 7.5vw;
   }
 
@@ -489,13 +492,13 @@ footer {
     height: 22rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     position: absolute;
     top: 9.4rem;
     font-size: 14vw;
   }
 
-  #sick-text-3 {
+  .sick-text-3 {
     padding: 0 1rem;
     font-size: 7.7vw;
   }
@@ -557,12 +560,12 @@ footer {
     height: 24rem;
   }
 
-  #sick-text-2 {
+  .sick-text-2 {
     position: absolute;
     top: 7rem;
   }
 
-  #sick-text-3 {
+  .sick-text-3 {
     padding: 0 1rem;
     font-size: 14vw;
   }
@@ -595,7 +598,7 @@ footer {
 }
 
 @media (max-width: 420px) {
-  #sick-text-2 {
+  .sick-text-2 {
     font-size: 20vw;
   }
 }
