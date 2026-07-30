@@ -109,4 +109,4 @@ function IgComponent({ link }: {
 }
 
 
-export default BandGrid
+export default XeetGrid
