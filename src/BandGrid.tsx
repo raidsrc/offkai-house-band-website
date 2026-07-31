@@ -6,6 +6,7 @@ import soneji from "./assets/soneji.png"
 // import yiv from "./assets/yiv.png"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.png"
+import nimo from "./assets/nimo.png"
 
 function BandGrid() {
   const members = [
@@ -27,7 +28,7 @@ function BandGrid() {
       },
     },
     {
-      name: "Ninomae Nimo", instrument: "Guitar", img: null, socials: {
+      name: "Ninomae Nimo", instrument: "Guitar", img: nimo, socials: {
         x: 'https://x.com/ninomaenimo',
       },
     },

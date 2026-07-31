@@ -8,24 +8,29 @@
   font-family: 'AkzidenzGrotesk';
   src: url('./src/assets/Akzidenz-grotesk-roman.ttf');
 }
+
 @font-face {
   font-family: 'AkzidenzGrotesk';
   font-weight: 600;
   src: url('./src/assets/Akzidenz-grotesk-bold.ttf');
 }
+
 @font-face {
   font-family: 'Neue Haas Grotesk';
   src: url('./src/assets/NHaasGroteskTXPro-55Rg.ttf');
 }
+
 @font-face {
   font-family: 'Neue Haas Grotesk';
   font-weight: 600;
   src: url('./src/assets/NHaasGroteskTXPro-65Md.ttf');
 }
+
 @font-face {
   font-family: 'Helvetica';
   src: url('./src/assets/helvetica.ttf');
 }
+
 @font-face {
   font-family: 'Helvetica';
   font-weight: 600;
@@ -58,6 +63,83 @@ a {
   color: white;
 }
 
+#en-jp-switch {
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  
+  .en-jp-text {
+    position: relative;
+    text-align: center;
+  }
+  label {
+    position: fixed; 
+    z-index: 10;
+    background-color: #202020;
+    padding: 0.6rem;
+    padding-bottom: 0.8rem;
+    border-bottom-right-radius: 2px;
+    opacity: 10%;
+    transition: opacity 200ms;
+  }
+  label:hover {
+    opacity: 100%;
+  }
+
+  /* yo shoutouts to https://uiverse.io/gharsh11032000/sour-vampirebat-66 for this switch  */
+  /* Hide default HTML checkbox */
+  input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: rgb(64, 72, 232);
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .switch input:checked+.slider {
+    background: #df292f;
+  }
+
+  .switch input:focus+.slider {
+    box-shadow: 0 0 2px #df292f;
+  }
+
+  .switch input:checked+.slider:before {
+    transform: translateX(1.5em);
+    /* bottom: 0; */
+  }
+}
+
 .big-video {
   height: 48rem;
 }
@@ -68,10 +150,11 @@ a {
   font-size: 4rem;
   font-weight: 800;
   background: url("./src/assets/test-hero.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
 }
 
 #hero.big-video {
-  height: 72rem;
+  height: 76rem;
 }
 
 .sick-text {
@@ -132,7 +215,7 @@ a {
 
 .sick-text-3 {
   position: absolute;
-  bottom: 0;
+  bottom: 3rem;
   font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
@@ -188,7 +271,7 @@ a {
 
 .tiny-text {
   padding-top: 3rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .lower-opacity-text {
@@ -196,6 +279,7 @@ a {
 }
 
 #concert-cta {
+  clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
   background-color: purple;
   display: flex;
   flex-direction: column;
@@ -302,7 +386,7 @@ a {
     justify-content: center;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
+    border-radius: 4%;
     color: #555;
     background: #f5f5f5;
     text-decoration: none;
@@ -398,7 +482,7 @@ footer {
 /* if smaller than/equal to X width -------------------------------------------------------------------------------- */
 @media (max-width: 2560px) {
   #hero.big-video {
-    height: 68rem;
+    height: 72rem;
   }
 
   .sick-text-1 {
@@ -419,7 +503,7 @@ footer {
 
   .sick-text-3 {
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     font-size: 8vw;
     text-align: justify;
     padding: 0 1rem;
@@ -441,7 +525,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1920px) {
   #hero.big-video {
-    height: 48rem;
+    height: 50rem;
   }
 
   .big-video {
@@ -483,7 +567,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
   #hero.big-video {
-    height: 36rem;
+    height: 38rem;
   }
 
   .sick-text-2 {
@@ -512,7 +596,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1080px) {
   #hero.big-video {
-    height: 32rem;
+    height: 34rem;
   }
 
   .sick-text-2 {
@@ -545,7 +629,7 @@ footer {
 @media (max-width: 800px) {
   #hero.big-video {
     height: 70vh;
-    min-height: 48rem;
+    min-height: 50rem;
   }
 
   .sick-text-1 {
@@ -579,12 +663,14 @@ footer {
   .sick-text-2 {
     position: absolute;
     top: 35vw;
+    left: 0;
 
   }
 
   .sick-text-3 {
     padding: 0 1rem;
     font-size: 7.6vw;
+    bottom: 3rem;
   }
 
   #dictionary {
@@ -675,7 +761,10 @@ footer {
 
   .sick-text-2 {
     top: 38vw;
+  }
 
+  .sick-text-3 {
+    bottom: 5rem;
   }
 
   #concert-cta {
