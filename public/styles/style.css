@@ -667,7 +667,6 @@ footer {
 
   .sick-text-1-group {
     display: none;
-    z-index: -10;
   }
 
   .sick-text-1-mobile-group {
@@ -684,7 +683,6 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 3;
     text-align: right;
     transition: color 400ms;
   }
@@ -695,9 +693,8 @@ footer {
 
   .sick-text-2-group {
     position: absolute;
-    top: 35vw;
-    left: 0;
-
+    top: 40vw;
+    left: 3rem;
   }
 
   .sick-text-3-group {
@@ -753,6 +750,7 @@ footer {
   #final-cta {
     #cta {
       padding-left: 8rem;
+      width: 50%;
     }
 
     .cta-text {}
@@ -771,10 +769,10 @@ footer {
     font-size: 31vw;
   }
 
-  .sick-text-2-group {
+  /* .sick-text-2-group {
     position: absolute;
     top: 34vw;
-  }
+  } */
 
   .sick-text-3-group {
     padding: 0 1rem;
@@ -800,6 +798,7 @@ footer {
 
   .sick-text-2-group {
     top: 38vw;
+    left: 0;
   }
 
   .sick-text-3-group {
