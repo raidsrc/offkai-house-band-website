@@ -174,11 +174,17 @@ a {
   }
 }
 
-.sick-text {
+.invert {
   mix-blend-mode: difference;
 }
 
-.sick-text-1 {
+.sick-text-copies {
+  /* color: white; */
+  color: transparent;
+  position: absolute;
+}
+
+.sick-text-1-group {
   font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
@@ -186,11 +192,10 @@ a {
 }
 
 #sick-text-1-copy {
-  color: transparent;
-  position: absolute;
   top: 0;
   left: 0;
-  transition: color 300ms;
+  z-index: 2;
+  transition: color 400ms;
 }
 
 #sick-text-1-copy:hover {
@@ -202,52 +207,45 @@ a {
   font-family: 'Helvetica';
 }
 
-.sick-text-2 {
+.sick-text-2-group {
   /* dis japanese */
-  position: absolute;
-  top: 32rem;
-  right: 0;
   font-size: 20rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 400ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
-}
 
-.sick-text-2:hover {
-  opacity: 0;
-}
-
-.sick-text-2-copy {
-  color: white;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 32rem;
+  right: 0;
+  left: unset;
 }
 
-.sick-text-3 {
+#sick-text-2-copy {
+  position: absolute;
+  z-index: 2;
+  transition: color 300ms;
+}
+
+#sick-text-2-copy:hover {
+  color: white;
+}
+
+.sick-text-3-group {
   position: absolute;
   bottom: 3rem;
   font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 600ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
 }
 
-.sick-text-3:hover {
-  opacity: 0;
+#sick-text-3-copy {
+  z-index: 2;
+  transition: color 300ms;
 }
 
-.sick-text-3-copy {
+#sick-text-3-copy:hover {
   color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #dictionary {
@@ -520,13 +518,13 @@ footer {
     height: 72rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     font-size: 20vw;
     text-align: justify;
     padding: 0 1rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     position: absolute;
     top: 30rem;
@@ -536,7 +534,7 @@ footer {
     padding: 0 1rem;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     position: absolute;
     bottom: 2rem;
     font-size: 7.5vw;
@@ -567,7 +565,7 @@ footer {
     height: 44rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     top: 20rem;
   }
@@ -585,7 +583,7 @@ footer {
     height: 44rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     top: 20rem;
   }
@@ -605,12 +603,12 @@ footer {
     height: 38rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 16rem;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
     font-size: 7.9vw;
   }
@@ -634,13 +632,13 @@ footer {
     height: 34rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 15rem;
     font-size: 12vw;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     font-size: 7.5vw;
   }
 
@@ -667,7 +665,7 @@ footer {
     min-height: 44rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     display: none;
   }
 
@@ -695,14 +693,14 @@ footer {
     text-align: right;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 35vw;
     left: 0;
 
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
     font-size: 7.6vw;
     bottom: 3rem;
@@ -773,12 +771,12 @@ footer {
     font-size: 31vw;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 34vw;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
     font-size: 14vw;
   }
@@ -791,7 +789,7 @@ footer {
     min-height: 42rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     display: none;
   }
 
@@ -799,11 +797,11 @@ footer {
     font-size: 40vw;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     top: 38vw;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     bottom: 3rem;
   }
 
@@ -853,11 +851,11 @@ footer {
     min-height: 30rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     font-size: 15vw;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     font-size: 7.4vw;
     bottom: 4rem;
   }
