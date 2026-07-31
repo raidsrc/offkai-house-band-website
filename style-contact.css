@@ -10,7 +10,7 @@ p {
   font-family: "neue haas grotesk";
 }
 
-.yuh {
+.main-section {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -18,12 +18,12 @@ p {
   align-items: center;
 }
 
-.yuh2 {
+.contact-div {
   display: flex;
   align-items: baseline;
 }
 
-.yuh3 {
+.return-section {
   text-align: center;
   padding-bottom: 20rem;
 }
