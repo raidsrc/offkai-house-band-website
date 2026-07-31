@@ -667,7 +667,7 @@ footer {
 
   .sick-text-1-group {
     display: none;
-    z-index: -2;
+    z-index: -10;
   }
 
   .sick-text-1-mobile-group {
@@ -684,12 +684,12 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     text-align: right;
     transition: color 400ms;
   }
 
-  .sick-text-1-mobile-copy:hover {
+  #sick-text-1-mobile-copy:hover {
     color: white;
   }
 
