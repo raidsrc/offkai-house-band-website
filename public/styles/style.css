@@ -202,7 +202,7 @@ a {
   color: white;
 }
 
-.sick-text-1-mobile {
+.sick-text-1-mobile-group {
   display: none;
   font-family: 'Helvetica';
 }
@@ -610,7 +610,7 @@ footer {
 
   .sick-text-3-group {
     padding: 0 1rem;
-    font-size: 7.9vw;
+    font-size: 7.7vw;
   }
 
   #concert-cta {
@@ -667,30 +667,30 @@ footer {
 
   .sick-text-1-group {
     display: none;
+    z-index: -2;
   }
 
-  .sick-text-1-mobile {
+  .sick-text-1-mobile-group {
     display: inline-block;
     position: absolute;
     font-size: 36vw;
     text-align: right;
     top: 0;
     right: 0;
-    transition: opacity 400ms;
-    opacity: 100%;
-    color: white;
   }
-
-  .sick-text-1-mobile:hover {
-    opacity: 0;
-  }
-
+  
   #sick-text-1-mobile-copy {
-    color: white;
+    color: transparent;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
     text-align: right;
+    transition: color 400ms;
+  }
+
+  .sick-text-1-mobile-copy:hover {
+    color: white;
   }
 
   .sick-text-2-group {
@@ -778,15 +778,16 @@ footer {
 
   .sick-text-3-group {
     padding: 0 1rem;
-    font-size: 14vw;
+    font-size: 7vw;
   }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 512px) {
   #hero.big-video {
-    height: 64vh;
-    min-height: 42rem;
+    min-height: 20rem;
+    height: 60vh;
+    max-height: 32rem;
   }
 
   .sick-text-1-group {
@@ -856,7 +857,7 @@ footer {
   }
 
   .sick-text-3-group {
-    font-size: 7.4vw;
+    font-size: 7vw;
     bottom: 4rem;
   }
 
