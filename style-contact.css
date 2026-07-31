@@ -1,0 +1,29 @@
+.spam-filter {
+  color: #303030;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+p {
+  font-family: "neue haas grotesk";
+}
+
+.yuh {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 16rem;
+  align-items: center;
+}
+
+.yuh2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.yuh3 {
+  text-align: center;
+  padding-bottom: 20rem;
+}
