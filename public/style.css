@@ -6,35 +6,35 @@
 
 @font-face {
   font-family: 'AkzidenzGrotesk';
-  src: url('./src/assets/Akzidenz-grotesk-roman.ttf');
+  src: url('./Akzidenz-grotesk-roman.ttf');
 }
 
 @font-face {
   font-family: 'AkzidenzGrotesk';
   font-weight: 600;
-  src: url('./src/assets/Akzidenz-grotesk-bold.ttf');
+  src: url('./Akzidenz-grotesk-bold.ttf');
 }
 
 @font-face {
   font-family: 'Neue Haas Grotesk';
-  src: url('./src/assets/NHaasGroteskTXPro-55Rg.ttf');
+  src: url('./NHaasGroteskTXPro-55Rg.ttf');
 }
 
 @font-face {
   font-family: 'Neue Haas Grotesk';
   font-weight: 600;
-  src: url('./src/assets/NHaasGroteskTXPro-65Md.ttf');
+  src: url('./NHaasGroteskTXPro-65Md.ttf');
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('./src/assets/helvetica.ttf');
+  src: url('./helvetica.ttf');
 }
 
 @font-face {
   font-family: 'Helvetica';
   font-weight: 600;
-  src: url('./src/assets/helvetica-bold.ttf');
+  src: url('./helvetica-bold.ttf');
 }
 
 body {
@@ -150,7 +150,7 @@ a {
   position: relative;
   font-size: 4rem;
   font-weight: 800;
-  background: url("./src/assets/test-hero.jpg");
+  background: url("./test-hero.jpg");
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
 }
 
