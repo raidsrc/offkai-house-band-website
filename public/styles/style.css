@@ -176,28 +176,25 @@ a {
 
 .sick-text {
   mix-blend-mode: difference;
-  /* opacity: 0; */
 }
 
 .sick-text-1 {
   font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 300ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
 }
 
-.sick-text-1:hover {
-  opacity: 0;
-}
-
 #sick-text-1-copy {
-  color: white;
+  color: transparent;
   position: absolute;
   top: 0;
   left: 0;
+  transition: color 300ms;
+}
+
+#sick-text-1-copy:hover {
+  color: white;
 }
 
 .sick-text-1-mobile {
@@ -314,7 +311,7 @@ a {
   }
 
   .okr-cc {
-    background-image: linear-gradient(to right, #501a57, #e18fe3);
+    background-image: linear-gradient(to right, #e18fe3, #9e1f53);
   }
 
   #cta {
@@ -542,7 +539,7 @@ footer {
   .sick-text-3 {
     position: absolute;
     bottom: 2rem;
-    font-size: 8vw;
+    font-size: 7.5vw;
     text-align: justify;
     padding: 0 1rem;
   }
@@ -666,8 +663,8 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
   #hero.big-video {
-    height: 70vh;
-    min-height: 50rem;
+    height: 50vw;
+    min-height: 44rem;
   }
 
   .sick-text-1 {
@@ -767,8 +764,13 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 660px) {
+  #hero.big-video {
+    height: 50vh;
+    min-height: 40rem;
+  }
+
   .sick-text-1-mobile {
-    font-size: 36vw;
+    font-size: 31vw;
   }
 
   .sick-text-2 {
@@ -785,7 +787,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 512px) {
   #hero.big-video {
-    height: 80vh;
+    height: 64vh;
     min-height: 42rem;
   }
 
@@ -846,8 +848,18 @@ footer {
 }
 
 @media (max-width: 420px) {
+  #hero.big-video {
+    height: 50vh;
+    min-height: 30rem;
+  }
+
   .sick-text-2 {
     font-size: 15vw;
+  }
+
+  .sick-text-3 {
+    font-size: 7.4vw;
+    bottom: 4rem;
   }
 
   #concert-cta {
