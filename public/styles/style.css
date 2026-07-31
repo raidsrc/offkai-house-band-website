@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  src: url('../fonts/Akzidenz-grotesk-roman.ttf');
+}
+
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  font-weight: 600;
+  src: url('../fonts/Akzidenz-grotesk-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('../fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  font-weight: 600;
+  src: url('../fonts/NHaasGroteskTXPro-65Md.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 600;
+  src: url('../fonts/helvetica-bold.ttf');
+}
+
+body {
+  /* line-height: 1.5; */
+  font-size: 1.25rem;
+  color: #ddd;
+  background-color: #202020;
+  /* font-family: 'inter', 'ibm plex sans', 'sans-serif'; */
+  font-family: 'Helvetica', 'sans-serif';
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 2560px;
+}
+
+h1, h2, h3 {
+  /* line-height: 1.2; */
+  font-family: 'AkzidenzGrotesk', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+#en-jp-switch {
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  
+  .en-jp-text {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.3rem;
+  }
+  label {
+    position: fixed; 
+    z-index: 10;
+    background-color: #202020;
+    padding: 0.6rem;
+    padding-bottom: 0.8rem;
+    border-bottom-right-radius: 2px;
+    opacity: 10%;
+    transition: opacity 200ms;
+  }
+  label:hover {
+    opacity: 100%;
+  }
+
+  /* yo shoutouts to https://uiverse.io/gharsh11032000/sour-vampirebat-66 for this switch  */
+  /* Hide default HTML checkbox */
+  input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: rgb(64, 72, 232);
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .switch input:checked+.slider {
+    background: #df292f;
+  }
+
+  .switch input:focus+.slider {
+    box-shadow: 0 0 2px #df292f;
+  }
+
+  .switch input:checked+.slider:before {
+    transform: translateX(1.5em);
+    /* bottom: 0; */
+  }
+}
+
+.big-video {
+  height: 48rem;
+}
+
+#hero {
+  background-color: white;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 800;
+  /* background: url("./test-hero.jpg"); */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
+}
+
+#hero.big-video {
+  height: 76rem;
+}
+
+#hero {
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    height: 110%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sick-text {
+  mix-blend-mode: difference;
+  /* opacity: 0; */
+}
+
+.sick-text-1 {
+  font-size: 32rem;
+  text-align: justify;
+  padding: 0 1rem;
+  transition: opacity 300ms;
+  opacity: 100%;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.sick-text-1:hover {
+  opacity: 0;
+}
+
+#sick-text-1-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sick-text-1-mobile {
+  display: none;
+  font-family: 'Helvetica';
+}
+
+.sick-text-2 {
+  /* dis japanese */
+  position: absolute;
+  top: 32rem;
+  right: 0;
+  font-size: 20rem;
+  text-align: justify;
+  padding: 0 1rem;
+  transition: opacity 400ms;
+  opacity: 100%;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.sick-text-2:hover {
+  opacity: 0;
+}
+
+.sick-text-2-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sick-text-3 {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 12rem;
+  text-align: justify;
+  padding: 0 1rem;
+  transition: opacity 600ms;
+  opacity: 100%;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.sick-text-3:hover {
+  opacity: 0;
+}
+
+.sick-text-3-copy {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dictionary {
+  padding: 6rem 4rem;
+
+  #words {
+    display: flex;
+    align-items: baseline;
+
+    h1 {
+      padding-right: 2rem;
+      font-size: 2.7rem;
+    }
+
+    h2 {
+      padding-right: 3rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .drop-shadow {
+    filter: drop-shadow(2px 2px #af087b)
+  }
+
+  #pronunciation {
+    span {
+      padding-right: 2rem;
+    }
+  }
+}
+
+.tiny-text {
+  padding-top: 3rem;
+  font-size: 0.8rem;
+}
+
+.lower-opacity-text {
+  opacity: 5%;
+}
+
+#concert-cta {
+  clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  #cta {
+    width: 40rem;
+    max-width: 100%;
+    padding-right: 16rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .cta-text {
+    text-align: right;
+    padding-bottom: 1rem;
+  }
+}
+
+.no-glow {
+  filter: drop-shadow(0 0 rgba(0, 0, 0, 0));
+  transition: all 10000ms ease-in-out;
+}
+
+#nimo-harrison-text-mentioned {
+  filter: drop-shadow(0px 0px 2px rgba(250, 0, 0, 0.7));
+}
+
+.nimo-harrison-glow {
+  filter: drop-shadow(0px 0px 10px rgba(250, 0, 0, 1));
+  transition: all 400ms;
+}
+
+.cta-text {}
+
+.cta-button {
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #005682;
+  font-size: 1.2rem;
+  font-family: 'AkzidenzGrotesk', 'Helvetica', 'sans-serif';
+  color: #ddd;
+  transition: transform 300ms;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+#members {
+  padding: 6rem 4rem;
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+  }
+
+  #band-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3rem;
+
+    .image-and-overlaid-text {
+      position: relative;
+
+      .text {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        transition: opacity 300ms;
+        filter: drop-shadow(1px 1px 2px #000) drop-shadow(0px 0px 3px #000);
+      }
+
+      .text.hidden {
+        opacity: 0%;
+      }
+
+      .text.visible {
+        opacity: 100%;
+
+      }
+    }
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 4%;
+    color: #555;
+    background: #f5f5f5;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .social-links a:hover {
+    filter: invert(1);
+  }
+
+  .social-links svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+#final-cta {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  #cta {
+    width: 24rem;
+    padding-left: 16rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .cta-text {
+    padding-bottom: 1rem;
+  }
+}
+
+.big-image {
+  height: 44rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+#raidsrc-link {
+  color: lab(55.4814% 75.0732 48.8528);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right,
+      lab(55.4814% 75.0732 48.8528),
+      lab(52.0183% 66.11 -78.2316) 100%);
+  text-decoration: none;
+  transition: opacity 400ms;
+  font-family: 'Neue Haas Grotesk', sans-serif;
+}
+
+#raidsrc-link:hover {
+  opacity: 80%;
+}
+
+/* Text Gradient CSS */
+.text-gradient {
+  color: #d68e8b;
+  background-image: linear-gradient(45deg,
+      #d68e8b,
+      #9c6967 25%,
+      #664644 50%,
+      #342525 75%,
+      #000000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+
+.sans {
+  font-family: 'AkzidenzGrotesk', 'Helvetica', 'sans-serif';
+}
+
+.serif {
+  font-family: 'CMU Serif', 'serif';
+}
+
+/* START MEDIA QUERIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* if smaller than/equal to X width -------------------------------------------------------------------------------- */
+@media (max-width: 2560px) {
+  #hero.big-video {
+    height: 72rem;
+  }
+
+  .sick-text-1 {
+    font-size: 20vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .sick-text-2 {
+    /* dis japanese */
+    position: absolute;
+    top: 30rem;
+    right: 0;
+    font-size: 12vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .sick-text-3 {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 8vw;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .big-video {
+    height: 44rem;
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1920px) {
+  #hero.big-video {
+    height: 50rem;
+  }
+
+  .big-video {
+    height: 44rem;
+  }
+
+  .sick-text-2 {
+    /* dis japanese */
+    top: 20rem;
+  }
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1600px) {
+  #hero.big-video {
+    height: 48rem;
+  }
+
+  .big-video {
+    height: 44rem;
+  }
+
+  .sick-text-2 {
+    /* dis japanese */
+    top: 20rem;
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+    }
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  #hero.big-video {
+    height: 38rem;
+  }
+
+  .sick-text-2 {
+    position: absolute;
+    top: 16rem;
+  }
+
+  .sick-text-3 {
+    padding: 0 1rem;
+    font-size: 7.9vw;
+  }
+
+  #concert-cta {
+    #cta {
+      width: 50%;
+    }
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  #hero.big-video {
+    height: 34rem;
+  }
+
+  .sick-text-2 {
+    position: absolute;
+    top: 15rem;
+    font-size: 12vw;
+  }
+
+  .sick-text-3 {
+    font-size: 7.5vw;
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #concert-cta {
+    #cta {
+      padding-right: 8rem;
+      width: 60%;
+    }
+
+    .cta-text {}
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 800px) {
+  #hero.big-video {
+    height: 70vh;
+    min-height: 50rem;
+  }
+
+  .sick-text-1 {
+    display: none;
+  }
+
+  .sick-text-1-mobile {
+    display: inline-block;
+    position: absolute;
+    font-size: 36vw;
+    text-align: right;
+    top: 0;
+    right: 0;
+    transition: opacity 400ms;
+    opacity: 100%;
+    color: white;
+  }
+
+  .sick-text-1-mobile:hover {
+    opacity: 0;
+  }
+
+  #sick-text-1-mobile-copy {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+
+  .sick-text-2 {
+    position: absolute;
+    top: 35vw;
+    left: 0;
+
+  }
+
+  .sick-text-3 {
+    padding: 0 1rem;
+    font-size: 7.6vw;
+    bottom: 3rem;
+  }
+
+  #dictionary {
+    padding: 4rem 3rem;
+
+    #words {
+      display: block;
+
+      h1 {
+        padding-right: 2rem;
+      }
+
+      h2 {
+        padding-right: 3rem;
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    #pronunciation {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  #concert-cta {
+    height: auto;
+    padding: 4rem 0;
+
+    #cta {
+      padding-right: 5rem;
+      width: 70%;
+    }
+
+    .cta-text {}
+  }
+
+  #members {
+    #band-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  #final-cta {
+    #cta {
+      padding-left: 8rem;
+    }
+
+    .cta-text {}
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 660px) {
+  .sick-text-1-mobile {
+    font-size: 36vw;
+  }
+
+  .sick-text-2 {
+    position: absolute;
+    top: 34vw;
+  }
+
+  .sick-text-3 {
+    padding: 0 1rem;
+    font-size: 14vw;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 512px) {
+  #hero.big-video {
+    height: 80vh;
+    min-height: 42rem;
+  }
+
+  .sick-text-1 {
+    display: none;
+  }
+
+  .sick-text-1-mobile {
+    font-size: 40vw;
+  }
+
+  .sick-text-2 {
+    top: 38vw;
+  }
+
+  .sick-text-3 {
+    bottom: 3rem;
+  }
+
+  #concert-cta {
+    height: auto;
+    padding: 3rem 0;
+
+    #cta {
+      padding: 0 2rem;
+      width: 80%;
+    }
+
+    .cta-text {}
+  }
+
+  #members {
+    padding: 4rem 2rem;
+
+    #band-grid {
+
+      .member-component {
+
+        .image-and-overlaid-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+  }
+
+  #final-cta {
+    #cta {
+      padding-left: 2rem;
+      width: 50%;
+    }
+
+    .cta-text {}
+  }
+}
+
+@media (max-width: 420px) {
+  .sick-text-2 {
+    font-size: 15vw;
+  }
+
+  #concert-cta {
+    height: auto;
+  }
+
+  #members {
+    #band-grid {
+      .member-component {
+        .image-and-overlaid-text {
+          .text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+  }
+}
