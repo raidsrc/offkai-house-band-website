@@ -305,7 +305,7 @@ a {
   .clip-text {
     color: transparent;
     background-clip: text;
-    filter: drop-shadow(0px 0px 2px grey);
+    filter: drop-shadow(0px 1px 0.5px black);
   }
 
   .surge-3d-live-musical {
@@ -329,12 +329,13 @@ a {
 
     p {
       text-align: right;
+      margin: 1rem 0;
     }
   }
 
   .cta-text {
     text-align: right;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -820,12 +821,14 @@ footer {
     padding: 4rem 2rem;
 
     #band-grid {
-
       .member-component {
-
         .image-and-overlaid-text {
           display: flex;
           justify-content: center;
+        }
+
+        .social-links {
+          gap: 0.4rem;
         }
       }
     }
