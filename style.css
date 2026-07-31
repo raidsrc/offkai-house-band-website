@@ -224,7 +224,7 @@ a {
 
 .no-glow {
   filter: drop-shadow(0 0 rgba(0, 0, 0, 0));
-  transition: all 500ms;
+  transition: all 10000ms ease-in-out;
 }
 
 #nimo-harrison-text-mentioned {
@@ -233,6 +233,7 @@ a {
 
 .nimo-harrison-glow {
   filter: drop-shadow(0px 0px 10px rgba(250, 0, 0, 1)) drop-shadow(0px 0px 10px rgba(250, 0, 0, 1));
+  transition: all 400ms;
 }
 
 .cta-text {}
@@ -243,7 +244,7 @@ a {
   border-radius: 0.5rem;
   background-color: #005682;
   font-size: 1.2rem;
-  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+  font-family: 'AkzidenzGrotesk', 'Helvetica', 'sans-serif';
   color: #ddd;
 }
 
@@ -385,7 +386,7 @@ footer {
 }
 
 .sans {
-  font-family: 'Akzidenz Grotesk', 'Helvetica', 'sans-serif';
+  font-family: 'AkzidenzGrotesk', 'Helvetica', 'sans-serif';
 }
 
 .serif {
