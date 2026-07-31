@@ -40,7 +40,7 @@
 body {
   /* line-height: 1.5; */
   font-size: 1.25rem;
-  color: #ddd;
+  color: #e7e7e7;
   background-color: #202020;
   /* font-family: 'inter', 'ibm plex sans', 'sans-serif'; */
   font-family: 'Helvetica', 'sans-serif';
@@ -67,14 +67,15 @@ a {
   font-size: 0.8rem;
   text-align: center;
   display: flex;
-  
+
   .en-jp-text {
     position: relative;
     text-align: center;
     padding-bottom: 0.3rem;
   }
+
   label {
-    position: fixed; 
+    position: fixed;
     z-index: 10;
     background-color: #202020;
     padding: 0.6rem;
@@ -83,6 +84,7 @@ a {
     opacity: 10%;
     transition: opacity 200ms;
   }
+
   label:hover {
     opacity: 100%;
   }
@@ -160,6 +162,7 @@ a {
 
 #hero {
   overflow: hidden;
+
   video {
     position: absolute;
     top: 50%;
@@ -298,6 +301,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  .clip-text {
+    color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0px 0px 2px grey);
+  }
+
+  .surge-3d-live-musical {
+    background-image: linear-gradient(to right, #fc80bc, #7aecfc);
+
+  }
+
+  .okr-cc {
+    background-image: linear-gradient(to right, #501a57, #e18fe3);
+  }
 
   #cta {
     width: 40rem;

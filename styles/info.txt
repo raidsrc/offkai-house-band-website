@@ -1,0 +1,1 @@
+move style.css into here when you want to run live server in vscode and have instant updates when you're making style or content modifications. otherwise style.css should remain in public/styles.
