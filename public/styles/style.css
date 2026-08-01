@@ -287,7 +287,7 @@ a {
 }
 
 .lower-opacity-text {
-  opacity: 5%;
+  opacity: 8%;
 }
 
 #concert-cta {
@@ -301,6 +301,7 @@ a {
     text-decoration: underline;
     transition: opacity 100ms;
   }
+
   a:hover {
     opacity: 80%;
   }
@@ -632,6 +633,10 @@ footer {
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  .big-image {
+    height: 32rem;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -685,7 +690,7 @@ footer {
     top: 0;
     right: 0;
   }
-  
+
   #sick-text-1-mobile-copy {
     color: transparent;
     position: absolute;
@@ -739,6 +744,7 @@ footer {
   #concert-cta {
     height: auto;
     padding: 4rem 0;
+    padding-top: 5rem;
 
     #cta {
       padding-right: 5rem;
@@ -785,6 +791,10 @@ footer {
   .sick-text-3-group {
     padding: 0 1rem;
     font-size: 7vw;
+  }
+
+  .big-image {
+    height: 28rem;
   }
 }
 
