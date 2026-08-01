@@ -20,6 +20,7 @@ main {
   justify-content: center;
   min-height: 10rem;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .contact-div {
@@ -31,6 +32,7 @@ main {
   text-align: center;
   height: 4rem;
   min-height: 10rem;
+  padding-top: 3rem;
 }
 
 #contact-spacer {

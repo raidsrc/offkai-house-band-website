@@ -12,9 +12,10 @@ function BandGrid() {
   const members = [
     {
       name: "Ray", instrument: "Drums", img: ray, socials: {
+        web: "https://raidsrc.me/links",
         yt: 'https://youtube.com/@raidsrc',
-        ig: 'https://instagram.com/raidsrc',
-        x: 'https://x.com/raidsrc',
+        // ig: 'https://instagram.com/raidsrc',
+        // x: 'https://x.com/raidsrc',
       },
     },
     {

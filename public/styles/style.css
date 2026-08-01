@@ -297,6 +297,14 @@ a {
   flex-direction: column;
   align-items: end;
 
+  a {
+    text-decoration: underline;
+    transition: opacity 100ms;
+  }
+  a:hover {
+    opacity: 80%;
+  }
+
   .clip-text {
     color: transparent;
     background-clip: text;
