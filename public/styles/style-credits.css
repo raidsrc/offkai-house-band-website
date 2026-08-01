@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-div {
+  width: 50%;
+  padding-top: 4rem;
+  font-family: monospace;
+  min-height: 24rem;
+}
+
+@media (max-width: 800px) {
+  .primary-div {
+    padding-top: 2rem;
+    width: 80%;
+  }
+}
