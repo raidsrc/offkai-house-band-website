@@ -448,6 +448,7 @@ a {
 }
 
 #testimonial-section {
+  display: none;
   background-color: #af087b;
   /* height: 44rem; */
   height: 24rem;
