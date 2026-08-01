@@ -3,7 +3,7 @@ import ray from "./assets/ray.png"
 import zal from "./assets/zal.png"
 import soneji from "./assets/soneji.png"
 import obamium from "./assets/obamium.jpeg"
-// import yiv from "./assets/yiv.png"
+import yiv from "./assets/yiv.jpg"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.png"
 import nimo from "./assets/nimo.png"
@@ -34,7 +34,7 @@ function BandGrid() {
       },
     },
     {
-      name: "Yiv", instrument: "Guitar", img: obamium, socials: {
+      name: "Yiv", instrument: "Guitar", img: yiv, socials: {
         x: 'https://x.com/yiversonh',
       },
     },
