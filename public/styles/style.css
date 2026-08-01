@@ -168,7 +168,8 @@ a {
     top: 50%;
     left: 50%;
     z-index: -1;
-    height: 110%;
+    width: 100%;
+    min-height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
   }
@@ -445,6 +446,16 @@ a {
   }
 }
 
+#testimonial {
+  background-color: #af087b;
+  /* height: 44rem; */
+  height: 24rem;
+  padding: 6rem 4rem;
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
 #final-cta {
   background-color: blueviolet;
   display: flex;
@@ -474,6 +485,9 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 1.1rem;
+  a {
+    color: unset;
+  }
 }
 
 #raidsrc-link {
@@ -866,7 +880,7 @@ footer {
 @media (max-width: 420px) {
   #hero.big-video {
     height: 50vh;
-    min-height: 30rem;
+    min-height: 24rem;
   }
 
   .sick-text-2-group {
@@ -875,7 +889,7 @@ footer {
 
   .sick-text-3-group {
     font-size: 7vw;
-    bottom: 4rem;
+    bottom: calc(10rem - 30vw);
   }
 
   #concert-cta {
