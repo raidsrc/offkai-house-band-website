@@ -2,7 +2,7 @@ import { useState } from "react"
 import ray from "./assets/ray.png"
 import zal from "./assets/zal.png"
 import soneji from "./assets/soneji.png"
-// import obamium from "./assets/obamium.jpeg"
+import obamium from "./assets/obamium.jpeg"
 // import yiv from "./assets/yiv.png"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.png"
@@ -34,12 +34,12 @@ function BandGrid() {
       },
     },
     {
-      name: "Yiv", instrument: "Guitar", img: null, socials: {
+      name: "Yiv", instrument: "Guitar", img: obamium, socials: {
         x: 'https://x.com/yiversonh',
       },
     },
     {
-      name: "Ang", instrument: "Trombone", img: null, socials: {
+      name: "Ang", instrument: "Trombone", img: obamium, socials: {
         x: 'https://x.com/absoluteangles',
       },
     },
@@ -55,7 +55,12 @@ function BandGrid() {
       },
     },
     {
-      name: "Harrison Fjord", instrument: "Keyboard", img: null, socials: {
+      name: "Harrison Fjord", instrument: "Keyboard", img: obamium, socials: {
+        x: 'https://x.com/harrison_fjord',
+      },
+    },
+    {
+      name: "naifs", instrument: "Tech", img: obamium, socials: {
         x: 'https://x.com/harrison_fjord',
       },
     },

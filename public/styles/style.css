@@ -162,6 +162,7 @@ a {
 
 #hero-section {
   overflow: hidden;
+  background-color: #000;
 
   video {
     position: absolute;
@@ -172,6 +173,7 @@ a {
     min-height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
+    opacity: 50%;
   }
 }
 
@@ -297,6 +299,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
 
   a {
     text-decoration: underline;
@@ -320,6 +325,18 @@ a {
 
   .okr-cc {
     background-image: linear-gradient(to right, #e18fe3, #9e1f53);
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    opacity: 20%;
   }
 
   #cta {
@@ -453,16 +470,32 @@ a {
   /* height: 44rem; */
   height: 24rem;
   padding: 6rem 4rem;
+
   h1 {
     font-size: 1.4rem;
   }
 }
 
 #final-cta-section {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    opacity: 30%;
+  }
 
   #cta {
     width: 24rem;
@@ -472,6 +505,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    position: relative;
+    z-index: 1;
   }
 
   .cta-text {
@@ -487,6 +522,8 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 1.1rem;
+  background-color: #202020;
+
   a {
     color: unset;
   }
@@ -778,6 +815,13 @@ footer {
   }
 
   #final-cta-section {
+    height: 36rem;
+
+    video {
+      left: 60%;
+      width: 200%;
+    }
+
     #cta {
       padding-left: 8rem;
       width: 50%;
@@ -870,6 +914,13 @@ footer {
   }
 
   #final-cta-section {
+    height: 28rem;
+
+    video {
+      left: 55%;
+      width: 200%;
+    }
+
     #cta {
       padding-left: 2rem;
       width: 50%;
