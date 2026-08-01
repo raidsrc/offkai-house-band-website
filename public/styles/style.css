@@ -369,6 +369,7 @@ a {
   font-family: 'AkzidenzGrotesk', 'Helvetica', 'sans-serif';
   color: #ddd;
   transition: transform 300ms;
+  max-width: 15rem;
 }
 
 .cta-button:hover {
