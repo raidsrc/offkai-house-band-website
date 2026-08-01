@@ -60,7 +60,7 @@ function BandGrid() {
       },
     },
     {
-      name: "naifs", instrument: "Tech", img: obamium, socials: {
+      name: "Naifs", instrument: "Tech", img: obamium, socials: {
         x: 'https://x.com/harrison_fjord',
       },
     },
