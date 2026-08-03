@@ -7,6 +7,8 @@ import yiv from "./assets/yiv.jpg"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.png"
 import nimo from "./assets/nimo.png"
+import ang from "./assets/ang.jpg"
+import naifs from "./assets/naifs.jpg"
 
 function BandGrid() {
   const members = [
@@ -39,7 +41,7 @@ function BandGrid() {
       },
     },
     {
-      name: "Ang", instrument: "Trombone", img: obamium, socials: {
+      name: "Ang", instrument: "Trombone", img: ang, socials: {
         x: 'https://x.com/absoluteangles',
       },
     },
@@ -60,8 +62,8 @@ function BandGrid() {
       },
     },
     {
-      name: "Naifs", instrument: "Tech", img: obamium, socials: {
-        x: 'https://x.com/harrison_fjord',
+      name: "Naifs", instrument: "Tech", img: naifs, socials: {
+        x: 'https://x.com/naifs_eri',
       },
     },
   ]
