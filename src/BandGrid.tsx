@@ -1,8 +1,9 @@
 import { useState } from "react"
-import ray from "./assets/ray.png"
+import ray from "./assets/ray.jpg"
 import zal from "./assets/zal.png"
 import soneji from "./assets/soneji.png"
-import obamium from "./assets/obamium.jpeg"
+// import obamium from "./assets/obamium.jpeg"
+import bidome from "./assets/joe bidome.png"
 import yiv from "./assets/yiv.jpg"
 import yang from "./assets/yang.png"
 import lightfiend from "./assets/lightfiend.jpg"
@@ -57,7 +58,7 @@ function BandGrid() {
       },
     },
     {
-      name: "Harrison Fjord", instrument: "Keyboard", img: obamium, socials: {
+      name: "Harrison Fjord", instrument: "Keyboard", img: bidome, socials: {
         x: 'https://x.com/harrison_fjord',
       },
     },
