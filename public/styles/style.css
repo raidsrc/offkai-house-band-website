@@ -289,8 +289,8 @@ a {
   font-size: 0.8rem;
 }
 
-.lower-opacity-text {
-  opacity: 8%;
+.slightly-hidden-text {
+  color: #303030;
 }
 
 #blah-paragraph-cta-section {
@@ -340,7 +340,7 @@ a {
   }
 
   #cta {
-    width: 40rem;
+    width: 48rem;
     max-width: 100%;
     padding-right: 16rem;
     display: flex;
@@ -351,7 +351,8 @@ a {
 
     p {
       text-align: right;
-      margin: 1rem 0;
+      margin: 0;
+      padding-bottom: 1rem;
     }
   }
 
@@ -890,6 +891,7 @@ footer {
     #cta {
       padding: 0 2rem;
       width: 80%;
+      font-size: 1.1rem;
     }
 
     .cta-text {}
