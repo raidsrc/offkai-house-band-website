@@ -1,15 +1,14 @@
 #testimonial-section {
   background-color: #af087b;
   padding: 6rem 0;
-  
+
   .bold {
     font-weight: 600;
   }
-  
+
   a {
     color: #af087b;
   }
-
 
   h1 {
     font-size: 1.6rem;
@@ -70,6 +69,7 @@
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1880px) {
+
   /* #testimonial-section {
     .grid {
       grid-template-columns: repeat(2, 1fr);
