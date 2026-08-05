@@ -13,6 +13,7 @@
   h1 {
     font-size: 1.6rem;
     font-weight: 500;
+    padding-left: 4rem;
     padding-bottom: 2rem;
   }
 
@@ -110,6 +111,16 @@
 @media (max-width: 660px) {}
 
 /* ------------------------------------------------------------------------------------------------------- */
-@media (max-width: 512px) {}
+@media (max-width: 512px) {
+  #testimonial-section {
+    h1 {
+      padding: 0 0 2rem 2rem;
+    }
+    padding: 4rem 0;
+    .grid {
+      padding: 0 2rem;
+    }
+  }
+}
 
 @media (max-width: 420px) {}

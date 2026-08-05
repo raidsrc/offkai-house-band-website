@@ -393,7 +393,7 @@ a {
 .cta-button:hover {
   transform: scale(1.1);
 }
-
+/* 
 #members-section {
   padding: 6rem 4rem;
 
@@ -408,42 +408,7 @@ a {
     grid-template-columns: repeat(7, 1fr);
     gap: 3rem;
   }
-}
-
-#testimonial-section {
-  background-color: #af087b;
-  padding: 6rem 0;
-
-  h1 {
-    font-size: 1.4rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-  }
-
-  .grid-holder {
-    width: fit-content;
-  }
-
-  .grid {
-    padding: 0 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-    .col {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .grid-item {
-      width: 100%;
-    }
-
-    blockquote.grid-item {
-      margin: 0;
-    }
-  }
-}
+} */
 
 #final-cta-section {
   /* background-color: blueviolet; */
@@ -592,12 +557,6 @@ footer {
   .sick-text-2-group {
     /* dis japanese */
     top: 20rem;
-  }
-
-  #testimonial-section {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 
 }
@@ -873,7 +832,7 @@ footer {
     height: auto;
   }
 
-  #members-section {
+  /* #members-section {
     #band-grid {
       .member-component {
         .image-and-overlaid-text {
@@ -884,5 +843,5 @@ footer {
       }
     }
 
-  }
+  } */
 }
