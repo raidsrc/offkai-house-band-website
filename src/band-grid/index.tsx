@@ -1,15 +1,16 @@
 import { useState } from "react"
-import ray from "./assets/ray.jpg"
-import zal from "./assets/zal.png"
-import soneji from "./assets/soneji.png"
-// import obamium from "./assets/obamium.jpeg"
-import bidome from "./assets/joe bidome.png"
-import yiv from "./assets/yiv.jpg"
-import yang from "./assets/yang.png"
-import lightfiend from "./assets/lightfiend.jpg"
-import nimo from "./assets/nimo.png"
-import ang from "./assets/ang.jpg"
-import naifs from "./assets/naifs.jpg"
+import '../styles/style-band.css'
+import ray from "../assets/ray.jpg"
+import zal from "../assets/zal.png"
+import soneji from "../assets/soneji.png"
+// import obamium fro.m "./assets/obamium.jpeg"
+import bidome from "../assets/joe bidome.png"
+import yiv from "../assets/yiv.jpg"
+import yang from "../assets/yang.png"
+import lightfiend from "../assets/lightfiend.jpg"
+import nimo from "../assets/nimo.png"
+import ang from "../assets/ang.jpg"
+import naifs from "../assets/naifs.jpg"
 import {
   WebComponent, YtComponent, IgComponent, XComponent
 } from './components'

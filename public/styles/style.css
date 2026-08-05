@@ -407,61 +407,6 @@ a {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 3rem;
-
-    .image-and-overlaid-text {
-      position: relative;
-
-      .text {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        transition: opacity 300ms;
-        filter: drop-shadow(1px 1px 2px #000) drop-shadow(0px 0px 3px #000);
-      }
-
-      .text.hidden {
-        opacity: 0%;
-      }
-
-      .text.visible {
-        opacity: 100%;
-
-      }
-    }
-  }
-
-  img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 0.75rem;
-    padding-top: 0.5rem;
-  }
-
-  .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 4%;
-    color: #555;
-    background: #f5f5f5;
-    text-decoration: none;
-    transition: all 0.25s ease;
-  }
-
-  .social-links a:hover {
-    filter: invert(1);
-  }
-
-  .social-links svg {
-    width: 18px;
-    height: 18px;
   }
 }
 
@@ -631,13 +576,6 @@ footer {
   .big-video {
     height: 44rem;
   }
-
-  #members-section {
-    #band-grid {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 2rem;
-    }
-  }
 }
 
 
@@ -679,13 +617,6 @@ footer {
     top: 20rem;
   }
 
-  #members-section {
-    #band-grid {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2rem;
-    }
-  }
-
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -710,12 +641,6 @@ footer {
     }
   }
 
-  #members-section {
-    #band-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
   .big-image {
     height: 32rem;
   }
@@ -735,12 +660,6 @@ footer {
 
   .sick-text-3-group {
     font-size: 7.5vw;
-  }
-
-  #members-section {
-    #band-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 
   #blah-paragraph-cta-section {
@@ -836,13 +755,6 @@ footer {
     .cta-text {}
   }
 
-  #members-section {
-    #band-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
-
   #final-cta-section {
     height: 36rem;
 
@@ -923,24 +835,6 @@ footer {
     }
 
     .cta-text {}
-  }
-
-  #members-section {
-    padding: 4rem 2rem;
-
-    #band-grid {
-      .member-component {
-        .image-and-overlaid-text {
-          display: flex;
-          justify-content: center;
-        }
-
-        .social-links {
-          gap: 0.4rem;
-        }
-      }
-    }
-
   }
 
   #final-cta-section {
