@@ -1,24 +1,6 @@
 import "../styles/style-testimonial.css"
-import PlainQuote from "./components/PlainQuote"
 
 export default function TestimonialGrid() {
-  const plainQuotes = [
-    {
-      words: "...I didn't realize it was gonna be a live band and have Yuu shake my bones in the best way was amazing. Like being back at a god-tier music festival.",
-      attribution: "LSotek",
-      link: "https://x.com/LSotek"
-    },
-    {
-      words: "Thank you [Ray] so much for drumming! I saw a snippet of the performance and it sounded AMAZING. You went crazy. You went sicko mode.",
-      attribution: "Aida Lyra",
-      link: "https://x.com/aida_lyra"
-    },
-    {
-      words: "Another quote goes here. Sample text. Uchiage was amazing. I'm totally not biased. ",
-      attribution: "raidsrc",
-      link: ""
-    },
-  ]
   return (
     <>
       <div className="grid-overflower">
@@ -45,7 +27,14 @@ export default function TestimonialGrid() {
 
             </div>
             <div className="col">
-              <PlainQuote data={plainQuotes[1]} />
+              <blockquote className="plain-quote grid-item">
+                <p className="words">
+                  Thank you [Ray] so much for drumming! I saw a snippet of the performance and it sounded AMAZING. You went <span className="bold">crazy</span>. You went <span className="bold">sicko mode</span>.
+                </p>
+                <a className="attribution" href={"https://x.com/aida_lyra"} target="_blank" rel="noreferrer">
+                  Aida Lyra
+                </a>
+              </blockquote>
 
               <div className="grid-item">
                 <blockquote className="twitter-tweet ">
@@ -57,7 +46,14 @@ export default function TestimonialGrid() {
                 </blockquote>
               </div>
 
-              <PlainQuote data={plainQuotes[0]} />
+              <blockquote className="plain-quote grid-item">
+                <p className="words">
+                  ...I didn't realize it was gonna be a live band and have <a href="https://x.com/hiiragiyuu_vt" target="_blank" rel="noreferrer">Yuu</a> shake my bones in the best way was amazing. Like being back at a <span className="bold">god-tier music festival.</span>
+                </p>
+                <a className="attribution" href={"https://x.com/LSotek"} target="_blank" rel="noreferrer">
+                  LSotek
+                </a>
+              </blockquote>
             </div>
 
             <div className="col">
