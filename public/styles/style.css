@@ -466,14 +466,33 @@ a {
 }
 
 #testimonial-section {
-  display: none;
+  /* display: none; */
   background-color: #af087b;
   /* height: 44rem; */
-  height: 24rem;
-  padding: 6rem 4rem;
+  height: auto;
+  padding: 6rem 0;
 
   h1 {
     font-size: 1.4rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+  }
+
+  .grid-overflower {
+    overflow: scroll;
+  }
+
+  .grid-holder {
+    width: fit-content;
+  }
+  
+  .grid {
+    padding: 0 4rem;
+    .grid-item {
+      width: 20rem;
+      height: fit-content;
+      float: left;
+    }
   }
 }
 
@@ -633,6 +652,11 @@ footer {
     top: 20rem;
   }
 
+  #testimonial-section {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
 }
 
