@@ -5,11 +5,18 @@ export default function TestimonialGrid() {
   const plainQuotes = [
     {
       words: "...I didn't realize it was gonna be a live band and have Yuu shake my bones in the best way was amazing. Like being back at a god-tier music festival.",
-      attribution: "LSotek"
+      attribution: "LSotek",
+      link: "https://x.com/LSotek"
+    },
+    {
+      words: "Thank you [Ray] so much for drumming! I saw a snippet of the performance and it sounded AMAZING. You went crazy. You went sicko mode.",
+      attribution: "Aida Lyra",
+      link: "https://x.com/aida_lyra"
     },
     {
       words: "Another quote goes here. Sample text. Uchiage was amazing. I'm totally not biased. ",
-      attribution: "raidsrc"
+      attribution: "raidsrc",
+      link: ""
     },
   ]
   return (
@@ -20,15 +27,6 @@ export default function TestimonialGrid() {
             <div className="col">
               <div className="grid-item">
                 <blockquote className="twitter-tweet ">
-                  <p lang="en" dir="ltr">Rehearsal for tomorrow&#39;s relay concert ✅<br />The band sound INCREDIBLE!!!<br /><br />Say
-                    hi if you see me around, OffKai~ <a href="https://t.co/12edkXaLR7">pic.twitter.com/12edkXaLR7</a></p>&mdash;
-                  WUNDER RiKU 🎵🪽 Songwriter| ✈️ ➡️ OffKai (@WunderRiKU) <a
-                    href="https://x.com/WunderRiKU/status/2081090499616907464?ref_src=twsrc%5Etfw">July 25, 2026</a>
-                </blockquote>
-              </div>
-
-              <div className="grid-item">
-                <blockquote className="twitter-tweet ">
                   <p lang="en" dir="ltr">IF YOUR ANIME BAND DOESN&#39;T HAVE HORNS I DON&#39;T WANT IT<br /><br />big bless ups to
                     the house band uchiage and project mikan MY GOATS AND INSPIRATION FOREVERMORE</p>&mdash; Moguri @ Homekai
                   2026 (@MogKnight) <a href="https://x.com/MogKnight/status/2081533481017114900?ref_src=twsrc%5Etfw">July 27,
@@ -36,9 +34,18 @@ export default function TestimonialGrid() {
                 </blockquote>
               </div>
 
+              <div className="grid-item">
+                <blockquote className="twitter-tweet ">
+                  <p lang="en" dir="ltr">Rehearsal for tomorrow&#39;s relay concert ✅<br />The band sound INCREDIBLE!!!<br /><br />Say
+                    hi if you see me around, OffKai~ <a href="https://t.co/12edkXaLR7">pic.twitter.com/12edkXaLR7</a></p>&mdash;
+                  WUNDER RiKU 🎵🪽 Songwriter| ✈️ ➡️ OffKai (@WunderRiKU) <a
+                    href="https://x.com/WunderRiKU/status/2081090499616907464?ref_src=twsrc%5Etfw">July 25, 2026</a>
+                </blockquote>
+              </div>
+
             </div>
             <div className="col">
-              <PlainQuote words={plainQuotes[1].words} attribution={plainQuotes[1].attribution} />
+              <PlainQuote data={plainQuotes[1]} />
 
               <div className="grid-item">
                 <blockquote className="twitter-tweet ">
@@ -50,7 +57,7 @@ export default function TestimonialGrid() {
                 </blockquote>
               </div>
 
-              <PlainQuote words={plainQuotes[0].words} attribution={plainQuotes[0].attribution} />
+              <PlainQuote data={plainQuotes[0]} />
             </div>
 
             <div className="col">

@@ -3,9 +3,9 @@
   padding: 6rem 0;
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
     padding-bottom: 2rem;
-    padding-left: 4rem;
   }
 
   .grid-holder {
@@ -39,9 +39,11 @@
       border-radius: 1rem;
       padding: 2rem;
       box-sizing: border-box;
+
       p {
         margin-top: 0;
       }
+
       .attribution {
         color: #af087b;
         font-weight: 600;
@@ -58,26 +60,41 @@
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1920px) {
-  #testimonial-section {
+  /* #testimonial-section {
     .grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } */
+  #testimonial-section {
+    .grid-overflower {
+      overflow: scroll;
     }
   }
-
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1600px) {}
 
 /* ------------------------------------------------------------------------------------------------------- */
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+  /* #testimonial-section {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } */
+}
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1080px) {}
 
 /* ------------------------------------------------------------------------------------------------------- */
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+  /* #testimonial-section {
+    .grid {
 
+    }
+  } */
+}
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 660px) {}
