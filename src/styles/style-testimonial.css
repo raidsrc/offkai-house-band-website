@@ -47,8 +47,9 @@
       color: #202020;
       border: 1px solid #606060;
       border-radius: 1rem;
-      padding: 2rem;
+      padding: 1.4rem;
       box-sizing: border-box;
+      font-size: 1.1rem;
 
       p {
         margin-top: 0;
