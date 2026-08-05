@@ -1,0 +1,88 @@
+#testimonial-section {
+  background-color: #af087b;
+  padding: 6rem 0;
+
+  h1 {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+  }
+
+  .grid-holder {
+    width: fit-content;
+  }
+
+  .grid {
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    blockquote.grid-item.plain-quote {
+      /* these are the plain quotes. */
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #eaeaea;
+      color: #202020;
+      border: 1px solid #606060;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-sizing: border-box;
+      p {
+        margin-top: 0;
+      }
+      .attribution {
+        color: #af087b;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* START MEDIA QUERIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* if smaller than/equal to X width -------------------------------------------------------------------------------- */
+@media (max-width: 2560px) {}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1920px) {
+  #testimonial-section {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1600px) {}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1280px) {}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1080px) {}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 800px) {}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 660px) {}
+
+/* ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 512px) {}
+
+@media (max-width: 420px) {}

@@ -1,7 +1,10 @@
-function TestimonialGrid() {
+import "../styles/style-testimonial.css"
+import PlainQuote from "./components/PlainQuote"
+
+export default function TestimonialGrid() {
   const plainQuotes = [
     {
-      words: "I didn't realize it was gonna be a live band and have Yuu shake my bones in the best way was amazing. Like being back at a god-tier music festival.",
+      words: "...I didn't realize it was gonna be a live band and have Yuu shake my bones in the best way was amazing. Like being back at a god-tier music festival.",
       attribution: "LSotek"
     },
     {
@@ -23,8 +26,6 @@ function TestimonialGrid() {
                     href="https://x.com/WunderRiKU/status/2081090499616907464?ref_src=twsrc%5Etfw">July 25, 2026</a>
                 </blockquote>
               </div>
-
-              <PlainQuote words={plainQuotes[0].words} attribution={plainQuotes[0].attribution} />
 
               <div className="grid-item">
                 <blockquote className="twitter-tweet ">
@@ -48,6 +49,8 @@ function TestimonialGrid() {
                         href="https://x.com/wumbojam/status/2081393179304321275?ref_src=twsrc%5Etfw">July 26, 2026</a>
                 </blockquote>
               </div>
+
+              <PlainQuote words={plainQuotes[0].words} attribution={plainQuotes[0].attribution} />
             </div>
 
             <div className="col">
@@ -75,25 +78,3 @@ function TestimonialGrid() {
 
   )
 }
-
-function PlainQuote({ words, attribution }: {
-  words: string,
-  attribution: string
-}) {
-  return (
-    <>
-      <blockquote className="plain-quote grid-item">
-        <div className="words">
-          {words}
-        </div>
-        <div className="attribution">
-          {attribution}
-        </div>
-      </blockquote>
-    </>
-  )
-}
-
-
-
-export default TestimonialGrid
