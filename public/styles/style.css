@@ -466,10 +466,7 @@ a {
 }
 
 #testimonial-section {
-  /* display: none; */
   background-color: #af087b;
-  /* height: 44rem; */
-  height: auto;
   padding: 6rem 0;
 
   h1 {
@@ -478,20 +475,27 @@ a {
     padding-left: 4rem;
   }
 
-  .grid-overflower {
-    overflow: scroll;
-  }
-
   .grid-holder {
     width: fit-content;
   }
-  
+
   .grid {
     padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
     .grid-item {
-      width: 20rem;
-      height: fit-content;
-      float: left;
+      width: 100%;
+    }
+
+    blockquote.grid-item {
+      margin: 0;
     }
   }
 }
