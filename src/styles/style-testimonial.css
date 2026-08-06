@@ -31,6 +31,7 @@
     .col {
       display: flex;
       flex-direction: column;
+      /* width: 24rem; */
     }
 
     .grid-item {
@@ -55,7 +56,18 @@
         margin-top: 0;
       }
 
+      .pic-and-author {
+        display: flex;
+        align-items: center;
+        .pic {
+          width: 2rem;
+          border-radius: 999rem;
+          margin-right: 0.8rem;
+        }
+      }
+
       .attribution {
+        display: inline-block;
         color: #af087b;
         font-weight: 600;
       }
@@ -101,11 +113,13 @@
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
-  /* #testimonial-section {
+  #testimonial-section {
     .grid {
-
+      .col {
+        width: 24rem;
+      }
     }
-  } */
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
