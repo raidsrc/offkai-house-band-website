@@ -8,19 +8,19 @@ import tofie from "./assets/tofie.jpg"
 export default function TestimonialGrid() {
   const plainQuotes = [
     {
-      words: <>Thank you [Ray] so much for drumming! I saw a snippet of the performance and it sounded AMAZING. You went <span className="bold">crazy</span>. You went <span className="bold">sicko mode</span>.</>,
+      words: <>Thank you [Ray] so much for drumming! I saw a snippet of the performance and it sounded AMAZING. You went <span className="bold">crazy</span>! You went <span className="bold">sicko mode</span>.</>,
       attribution: "Aida Lyra",
       link: "https://x.com/aida_lyra",
       pic: aida
     },
     {
-      words: <>...I didn't realize it was gonna be a live band and have <a href="https://x.com/hiiragiyuu_vt" target="_blank" rel="noreferrer">Yuu</a> shake my bones in the best way was amazing. Like being back at a <span className="bold">god-tier music festival.</span></>,
+      words: <>...I didn't realize it was gonna be a live band and have <a href="https://x.com/hiiragiyuu_vt" target="_blank" rel="noreferrer">Yuu</a> shake my bones in the best way was amazing. Like being back at a <span className="bold">god-tier music festival</span>.</>,
       attribution: "LSotek",
       link: "https://x.com/lsotek",
       pic: lsotek
     },
     {
-      words: <>Thank you so much <a href="https://x.com/ninomaenimo" target="_blank" rel="noreferrer">Nimo</a> for all the hard work! You guys are seriously the best- <span className="bold">I had the time of my life!</span></>,
+      words: <>Thank you so much <a href="https://x.com/ninomaenimo" target="_blank" rel="noreferrer">Nimo</a> for all the hard work! You guys are seriously the best- <span className="bold">I had the time of my life</span>!</>,
       attribution: "Otoharu Riyo",
       link: "https://x.com/otoharuriyo",
       pic: riyo
