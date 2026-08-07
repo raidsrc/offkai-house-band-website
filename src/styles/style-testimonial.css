@@ -13,8 +13,11 @@
   h1 {
     font-size: 1.6rem;
     font-weight: 500;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
+    padding: 0 4rem 2rem 4rem;
+  }
+
+  .only-show-on-mobile {
+    display: none;
   }
 
   .grid-holder {
@@ -59,6 +62,7 @@
       .pic-and-author {
         display: flex;
         align-items: center;
+
         .pic {
           width: 2rem;
           border-radius: 999rem;
@@ -129,9 +133,21 @@
 @media (max-width: 512px) {
   #testimonial-section {
     h1 {
+      padding: 0 2rem 2rem 2rem;
+    }
+
+    .only-show-on-mobile {
+      display: inline-block;
       padding: 0 0 2rem 2rem;
     }
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
     padding: 4rem 0;
+
     .grid {
       padding: 0 2rem;
     }
