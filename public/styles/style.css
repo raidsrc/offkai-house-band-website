@@ -293,6 +293,11 @@ a {
   color: #303030;
 }
 
+.uchiage-mentioned {
+  font-style: italic;
+  font-weight: 600;
+}
+
 #blah-paragraph-cta-section {
   clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
   background-color: purple;
@@ -393,6 +398,7 @@ a {
 .cta-button:hover {
   transform: scale(1.1);
 }
+
 /* 
 #members-section {
   padding: 6rem 4rem;
